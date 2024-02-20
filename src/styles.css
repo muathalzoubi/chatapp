@@ -151,7 +151,6 @@ h2 {
   content: "";
   display: block;
   position: absolute;
-  z-index: -3;
 }
 .main:before {
   right: 0;
@@ -183,7 +182,6 @@ h2 {
   position: absolute;
 }
 .main__text-wrapper:before {
-  z-index: -1;
   top: -3em;
   right: -3em;
   width: 13em;
@@ -194,7 +192,6 @@ h2 {
   animation: rotation 7s linear infinite;
 }
 .main__text-wrapper:after {
-  z-index: -1;
   bottom: -20em;
   width: 20em;
   height: 20em;
@@ -203,7 +200,6 @@ h2 {
   animation: rotation 7s linear infinite;
 }
 .arrow {
-  z-index: 1000;
   opacity: 0.5;
   position: absolute;
 }
@@ -406,6 +402,7 @@ h2 {
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 99999999;
 }
 
 .chat-header {
